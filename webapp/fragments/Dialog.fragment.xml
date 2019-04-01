@@ -1,0 +1,21 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<SelectDialog
+		noDataText="No Products Found"
+		title="Select Product"
+		search="handleSearch"
+		confirm="handlConfirm"
+		cancel="handleClose"
+		items="{
+			path: '/results'
+		}" >
+		<StandardListItem
+			title="{ProductName}"
+			description="{ProductId}"
+			icon="{ProductPicUrl}"
+			iconDensityAware="false"
+			iconInset="false"
+			type="Active" />
+	</SelectDialog>
+</core:FragmentDefinition>
